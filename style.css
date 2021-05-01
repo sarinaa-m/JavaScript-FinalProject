@@ -1,57 +1,76 @@
-/* #ec4b24 */
-
-@font-face {
-    font-family: "Iran-Sans";
-    src: url(./BRoya/BRoya.woff) format("woff"), url(./BRoya/BRoya.eot) format("eot"), url(./BRoya/BRoya.ttf) format("truetype");
-}
-
-body {
-    direction: rtl;
-    font-family: "Iran-Sans" !important;
-}
-
-
-/* HEADER */
-
-header {
-    background-color: #1b1b1b;
-    font-size: 1.2rem;
-}
-
-
-/* SECTION1 AND CAROUSEL */
-
-.carousel-inner img {
-    height: 400px;
-    width: 100%;
-}
-
-.section1 {
-    position: relative;
-}
-
-.section1 .section1-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    z-index: 1;
-    text-align: center;
-}
-
-
-/* SECTION 2 */
-
-.section2 {
-    background-color: #1b1b1b;
-}
-
-.section2 .sampleImg {
-    width: 100%;
-}
-
-.section2 .logo {
-    widows: 150px;
-    height: 150px;
-}
+    /* #ec4b24 */
+    
+    @font-face {
+        font-family: "Iran-Sans";
+        src: url(./BRoya/BRoya.woff) format("woff"), url(./BRoya/BRoya.eot) format("eot"), url(./BRoya/BRoya.ttf) format("truetype");
+    }
+    
+    body {
+        direction: rtl !important;
+        font-family: "Iran-Sans" !important;
+    }
+    /* HEADER */
+    
+    header {
+        background-color: #f3f3f3;
+        font-size: 1.2rem;
+    }
+    /* SECTION1 AND CAROUSEL */
+    
+    .carousel-inner img {
+        height: 400px;
+        width: 100%;
+    }
+    
+    .section1 {
+        position: relative;
+    }
+    
+    .section1 .section1-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        z-index: 1;
+        text-align: center;
+    }
+    /* SECTION 2 */
+    
+    .section2 {
+        background-color: #f3f3f3;
+    }
+    
+    .section2 .sampleImg {
+        width: 100%;
+    }
+    
+    .section2 .logo {
+        widows: 150px;
+        height: 150px;
+    }
+    /* CONTACT US */
+    
+    .contact-section1 {
+        height: 100px;
+        width: 100%;
+        background-color: rgb(235, 172, 193);
+    }
+    
+    .contact-section1 .information>h3 {
+        text-align: center;
+        line-height: 100px;
+    }
+    
+    .contact-section1 .information>h3:hover {
+        transform: scale(1.5);
+        transition: 0.5s;
+    }
+    
+    .invalid {
+        color: red;
+    }
+    
+    .contact-section1 .needs-validation>label {
+        direction: rtl;
+    }
