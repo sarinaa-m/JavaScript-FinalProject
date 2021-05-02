@@ -6,10 +6,69 @@
     }
     
     body {
-        direction: rtl !important;
         font-family: "Iran-Sans" !important;
+        direction: rtl !important;
     }
+    /* GENERAL CLASSES */
+    
+    .box {
+        height: auto !important;
+        text-transform: capitalize;
+        overflow: hidden;
+        margin: 4%;
+        color: white;
+    }
+    
+    .check-box {
+        margin-bottom: 10px;
+        color: white;
+    }
+    
+    .checkbox-elements {
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    .checkbox-elements .checkbox-text {
+        margin-top: -6px;
+        padding-left: 10px;
+    }
+    
+    .icon-text {
+        padding: 6px;
+    }
+    
+    .text {
+        margin-right: 10px;
+        margin-top: -4px;
+    }
+    /* END GENERAL CLASSES */
     /* HEADER */
+    
+    .header {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        background-color: aqua;
+    }
+    
+    .progressBar {
+        height: 10px;
+        background-color: #ec4b24;
+        width: 0%;
+    }
+    
+    .progressContainer {
+        width: 100%;
+        height: 10px;
+        background-color: white;
+    }
+    
+    .content {
+        margin: auto;
+        width: 80%;
+    }
     
     header {
         background-color: #f3f3f3;
@@ -49,12 +108,47 @@
         widows: 150px;
         height: 150px;
     }
+    /* START SECTION3 */
+    
+    .section3 {
+        background-color: black;
+        height: 300px;
+    }
+    /* END SECTION 3 */
+    /* START FOOTER */
+    
+    .footer {
+        background-color: #f3f3f3;
+        width: 100%;
+        height: auto;
+    }
+    
+    .footer img {
+        height: 180px;
+        width: 180px;
+    }
+    
+    .footer h4 {
+        color: #ec4b24;
+    }
+    
+    .footer-text {
+        color: white;
+        line-height: 60px;
+        text-align: center;
+    }
+    
+    .copyright {
+        width: 100%;
+        background-color: #111e25;
+        height: 60px;
+    }
     /* CONTACT US */
     
     .contact-section1 {
         height: 100px;
         width: 100%;
-        background-color: rgb(235, 172, 193);
+        background-color: #ec4b24;
     }
     
     .contact-section1 .information>h3 {
@@ -66,11 +160,13 @@
         transform: scale(1.5);
         transition: 0.5s;
     }
-    
-    .invalid {
-        color: red;
-    }
-    
-    .contact-section1 .needs-validation>label {
+    /* .contact-section1 h2 {
+        text-align: right;
+    } */
+    /* .contact-section1 .needs-validation>label {
         direction: rtl;
+    } */
+    
+    .form-contact .btn {
+        background-color: #ec4b24;
     }
