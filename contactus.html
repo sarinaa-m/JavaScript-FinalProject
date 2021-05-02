@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa-IR">
 
 <head>
     <meta charset="UTF-8">
@@ -8,15 +8,14 @@
     <title>تماس با ما</title>
     <link rel="stylesheet" href="style.css">
     <!-- icon -->
-    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- icon -->
-    <link rel="stylesheet" href="bootstrap-4.6.0/dist/css/bootstrap.min.css">
-    <style>
-        body {
-            direction: rtl;
-        }
-    </style>
+    <!-- <link rel="stylesheet" href="bootstrap-4.6.0/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous" />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.min.js" integrity="sha384-VmD+lKnI0Y4FPvr6hvZRw6xvdt/QZoNHQ4h5k0RL30aGkR9ylHU56BzrE2UoohWK" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -48,76 +47,143 @@
     <div class="contact-section1">
         <div class="container">
             <div class="information">
-                <!-- <img src="./images/city3.jpg" alt=""> -->
                 <h3>تماس با ما</h3>
             </div>
-
-            <!-- <h2>Form Validation</h2>
-            <p>In this example, we use <code>.needs-validation</code>, which will add the validation effect AFTER the form has been submitting (if there's anything missing).</p>
-            <p>Try to submit this form before filling out the input fields, to see the effect.</p> -->
-            <!-- <form class="needs-validation">
+        </div>
+    </div>
+    <!-- <form class="needs-validation">
                 <div class="form-group d-flex">
                     <label for="uname">نام و نام خانوادگی:</label>
                     <input type="text" class="form-control" id="uname" name="uname">
-                    
+
                     <span class="invalid"></span>
                 </div>
                 <div class="form-group d-flex">
                     <label for="uname">ایمیل:</label>
                     <input type="email" class="form-control" id="email" name="email">
-                    
+
                     <span class="invalid"></span>
                 </div>
                 <div class="form-group d-flex">
                     <label for="uname">شماره تماس:</label>
                     <input type="tel" class="form-control" id="tel" name="tel">
-                    
+
                     <span class="invalid d-flex"></span>
                 </div>
                 <div class="form-group d-flex">
                     <label for="pwd">موضوع:</label>
                     <input type="text" class="form-control" id="info" name="info">
-                    
+
                     <span class="invalid"></span>
                 </div>
                 <button class="btn btn-primary" onclick="checkInfo()">ارسال</button>
             </form> -->
-            <form class="p-5 form-contact-us">
+
+    <div class="form-contact">
+        <div class="container">
+            <form class="form-contact-us p-5">
+                <h2>فرم تماس</h2>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <input type="text" class="form-control" id="inputName" placeholder="نام و نام خانوادگی">
-                        <span class="invalid"></span>
+                        <span class="invalid text-danger"></span>
                     </div>
                     <div class="form-group col-md-6">
                         <input type="text" class="form-control" id="inputLocation" placeholder="محل سکونت">
-                        <span class="invalid"></span>
+                        <span class="invalid text-danger"></span>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <input type="email" class="form-control" id="inputEmail" placeholder="ایمیل">
-                        <span class="invalid"></span>
+                        <span class="invalid text-danger"></span>
                     </div>
                     <div class="form-group col-md-6">
                         <input type="tel" class="form-control" id="inputPhone" placeholder="شماره تماس">
-                        <span class="invalid"></span>
+                        <span class="invalid text-danger"></span>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-12">
                         <input type="text" row="4" class="form-control" id="inputMassage" placeholder="پیام">
-                        <span class="invalid"></span>
+                        <span class="invalid text-danger"></span>
                     </div>
                 </div>
 
-                <button type="submit" class="col-md-12 btn btn-primary" onclick="checkInfo()">ارسال</button>
+                <button type="submit" class="col-md-12 btn" onclick="checkInfo()">ارسال</button>
             </form>
-
-
         </div>
     </div>
 
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row pt-5">
+                    <!-- LOGO -->
+                    <div class="box col-sm-3 col-md-5 col-lg-3 text-center ">
+                        <img class="logo" src="./images/logo2.png"></img>
+                    </div>
+                    <!-- BRANCHES -->
+                    <div class="box col-sm-3 col-md-4 col-lg-2">
+                        <h4>شعبات ملک‌آسا</h4>
+                        <div class="products-footer">
+                            <ul class="text-dark">
+                                <li>
+                                    <a href="#" class="text-dark">ایران، تهران</a>
+                                </li>
+                                <li>
+                                    <a href=" " class="text-dark">ایران، اصفهان</a>
+                                </li>
+                                <li>
+                                    <a href=" " class="text-dark">ایران، شیراز</a>
+                                </li>
+                                <li>
+                                    <a href=" " class="text-dark">ترکیه، استانبول</a>
+                                </li>
+                                <li>
+                                    <a href=" " class="text-dark">انگلستان، لندن</a>
+                                </li>
+                                <li>
+                                    <a href=" " class="text-dark">کانادا، کلگری</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CONTACT -->
+                    <div class="box col-sm-3 col-md-6 col-lg-4">
+                        <div class="contact-info">
+                            <h4>contact</h4>
+                            <div class="d-flex icon-text">
+                                <i class="fa fa-map-marker text-dark"></i>
+                                <div class="text text-dark">تهران-خیابان افسریه-جنب کوچه 6-املاک ملک‌آسا</div>
+                            </div>
+                            <div class="d-flex icon-text">
+                                <i class="fa fa-phone-square text-dark"></i>
+                                <div class="text text-dark">+98 21 22222222 & 22222222</div>
+                            </div>
+                            <div class="d-flex icon-text">
+                                <i class="fa fa-fax text-dark"></i>
+                                <div class="text text-dark">+98 21 22222222</div>
+                            </div>
+                            <div class="d-flex icon-text">
+                                <i class="fa fa-envelope text-dark"></i>
+                                <a class="text text-dark">sarin.moayedi@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
 
+
+                </div>
+            </div>
+        </div>
+        <!-- COPYRIGHT -->
+        <div class="copyright">
+            <div class="footer-text">تمامی حقوق این سایت متعلق به مجموعه ملک‌آسا می‌باشد.<span>&#169</span></div>
+        </div>
+
+    </footer>
+    <!-- END FOOTER -->
 
 
 
