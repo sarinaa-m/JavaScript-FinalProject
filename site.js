@@ -2,6 +2,24 @@
 var myDate = new Date();
 document.getElementById('dateTime').innerHTML = myDate.toLocaleDateString('fa');
 document.getElementById('clock').innerHTML = myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
+
+// PAGE SCROLL
+window.onscroll = function() {
+    personalbar();
+};
+
+function personalbar() {
+    var scroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+    var h =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+    var sc = (scroll / h) * 100;
+
+    document.getElementById("proBar").style.width = sc + "%";
+}
+
 // CONTACT PAGE
 
 
