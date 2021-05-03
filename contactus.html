@@ -2,10 +2,10 @@
 <html lang="fa-IR">
 
 <head>
+    <title>تماس با ما</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تماس با ما</title>
     <link rel="stylesheet" href="style.css">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -19,6 +19,13 @@
 </head>
 
 <body>
+    <div class="header">
+        <div class="progressContainer">
+            <div class="progressBar" id="proBar">
+
+            </div>
+        </div>
+    </div>
     <header>
         <!-- MENU -->
         <nav class="navbar navbar-expand-sm">
@@ -30,14 +37,20 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="/index.html">صفحه اصلی</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">محصولات</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-dark dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">شعبات</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">ایران</a>
+                            <a class="dropdown-item" href="#">ترکیه</a>
+                            <a class="dropdown-item" href="#">انگلستان</a>
+                            <a class="dropdown-item" href="#">کانادا</a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">درباره ما</a>
+                        <a class="nav-link text-dark" href="./aboutUs.html">درباره ما</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark active" href="#">تماس با ما</a>
+                        <a class="nav-link text-dark active" href="./contactus.html">تماس با ما</a>
                     </li>
                 </ul>
             </div>
