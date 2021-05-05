@@ -31,7 +31,7 @@
 
 .progressBar {
     height: 10px;
-    background-color: #ec4b24;
+    background-color: #FFA5A5;
     width: 0%;
 }
 
@@ -44,7 +44,7 @@
 .contact-section1 {
     height: 100px;
     width: 100%;
-    background-color: #ec4b24;
+    background-color: #FFA5A5;
 }
 
 .contact-section1 .information>h3 {
@@ -75,7 +75,7 @@ header {
 }
 
 .intro {
-    background: #ec4b24;
+    background: #A5C9FF;
     padding: 100px 0;
 }
 
@@ -95,12 +95,12 @@ h1 {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .section1 {
-    background-color: #808080;
+    background-color: #bfbfbf;
     height: auto;
 }
 
 .timeline ul {
-    background: #808080;
+    background: #bfbfbf;
     padding: 50px 0;
 }
 
@@ -130,7 +130,7 @@ h1 {
     bottom: 0;
     width: 400px;
     padding: 15px;
-    background: #ec4b24;
+    background: #A5C9FF;
 }
 
 .timeline ul li div::before {
@@ -149,7 +149,7 @@ h1 {
 .timeline ul li:nth-child(odd) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #ec4b24 transparent transparent;
+    border-color: transparent #A5C9FF transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -159,7 +159,7 @@ h1 {
 .timeline ul li:nth-child(even) div::before {
     right: -15px;
     border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent #ec4b24;
+    border-color: transparent transparent transparent #A5C9FF;
 }
 
 time {
@@ -178,7 +178,7 @@ time {
 }
 
 .timeline ul li.in-view::after {
-    background: #ec4b24;
+    background: #A5C9FF;
 }
 
 .timeline ul li div {
@@ -228,7 +228,7 @@ time {
     .timeline ul li:nth-child(even) div::before {
         left: -15px;
         border-width: 8px 16px 8px 0;
-        border-color: transparent #ec4b24 transparent transparent;
+        border-color: transparent #A5C9FF transparent transparent;
     }
 }
 

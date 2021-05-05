@@ -92,3 +92,32 @@ function checkInfo() {
     window.addEventListener("scroll", callbackFunc);
 
 })();
+
+$(function() {
+    let duration = 300;
+    $('#title1').click(function() {
+        $('#content1').slideToggle(duration);
+    });
+    $('#title2').click(function() {
+        $('#content2').slideToggle(duration);
+    });
+    $('#title3').click(function() {
+        $('#content3').slideToggle(duration);
+    });
+    $('#title4').click(function() {
+        $('#content4').slideToggle(duration);
+    });
+    $('#title5').click(function() {
+        $('#content5').slideToggle(duration);
+    });
+});
+
+function showText() {
+    document.getElementById('mission-hover').style.backgroundColor = '#ffc311';
+    document.getElementById('mission-text').innerHTML = 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم';
+}
+
+function hideText() {
+    document.getElementById('mission-hover').style.backgroundColor = 'transparent';
+    document.getElementById('mission-text').innerHTML = '';
+}
