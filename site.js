@@ -1,8 +1,3 @@
-// time and date HOME PAGE
-// var myDate = new Date();
-// document.getElementById('dateTime').innerHTML = myDate.toLocaleDateString('fa');
-// document.getElementById('clock').innerHTML = myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
-
 // PAGE SCROLL
 window.onscroll = function() {
     personalbar();
@@ -28,11 +23,12 @@ function checkInfo() {
     var location = document.getElementById('inputLocation');
     var emaill = document.getElementById('inputEmail');
     var phoneNumber = document.getElementById('inputPhone');
+    var message = document.getElementById('inputMassage');
 
     var result = true;
     var infoElements = document.getElementsByClassName('invalid');
     for (const element of infoElements) {
-        infoElements.innerHTML = '';
+        element.innerHTML = '';
     }
 
     if (inputName.value === '') {
@@ -53,6 +49,10 @@ function checkInfo() {
         phoneNumber.nextElementSibling.innerHTML = "لطفا شماره تماس خود را وارد کنید";
         result = false;
     }
+    if (phoneNumber.value === '') {
+        message.nextElementSibling.innerHTML = "لطفا پیام خود را وارد کنید";
+        result = false;
+    }
 
     if (inputName.value !== '' && emaill.value !== '' && location.value !== '' && phoneNumber.value != '') {
         alert('پیام شما با موفقیت ثبت شد');
@@ -61,6 +61,7 @@ function checkInfo() {
     location.value = '';
     emaill.value = '';
     phoneNumber.value = '';
+    message.value = '';
 
 };
 // ABOUT US PAGE
@@ -112,12 +113,12 @@ $(function() {
     });
 });
 
-function showText() {
-    document.getElementById('mission-hover').style.backgroundColor = '#ffc311';
-    document.getElementById('mission-text').innerHTML = 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم';
-}
+// function showText() {
+//     document.getElementById('mission-hover').style.backgroundColor = '#ffc311';
+//     document.getElementById('mission-text').innerHTML = 'ملک‌آسا';
+// }
 
-function hideText() {
-    document.getElementById('mission-hover').style.backgroundColor = 'transparent';
-    document.getElementById('mission-text').innerHTML = '';
-}
+// function hideText() {
+//     document.getElementById('mission-hover').style.backgroundColor = 'transparent';
+//     document.getElementById('mission-text').innerHTML = '';
+// }
